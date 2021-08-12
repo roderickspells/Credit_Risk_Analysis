@@ -2,6 +2,18 @@
 
 ## Overview
 
+For this project, I am utizlizing supervised machine learning with Python to preict and determine if credit was a high or a low risk. The goal was to predict high risk credit with a high accuracy and with a level of sensitivity and precision that would not allow for great creditors to be declined for bias. For my analysis, I utilized oversampling methods, undersampling methods and classifying methods to minimize biases. 
+
+### Machine Learning Models Used
+
+Naive Random Oversampling \
+SMOTE Oversampling \
+Cluster Centroid Undersampling \
+SMOTEENN Sampling \
+Balanced Random Forest Classifying \
+Easy Ensemble Classifying
+
+
 ### Software
 
 Jupyter Notebook \
@@ -63,7 +75,7 @@ Python Machine Learning
 ![image](https://github.com/roderickspells/Credit_Risk_Analysis/blob/main/Challenge/images/Balanced_Random_Forest_Classifying.png?raw=true)
 
 
-### Easy Ensemble  AdaBoost Classifying
+### Easy Ensemble AdaBoost Classifying
 
 - Accuracy: 91.8%
 - Precision High Risk: 9%
@@ -75,6 +87,9 @@ Python Machine Learning
 
 
 
-
-
 ## Summary
+Since we are looking for a model to predict credit worthiness, we want a model that will be more precise than sensitive as we do not want potential creditors to be denied when they are in fact a great customer to have. We are looking for a model that would be have the least amount of high risk loans approved (Recall High Risk), a low lever of low risk loans deemed high risk (Recall Low Risk), and an overall accuracy score.
+
+Based on the classifcation reports from each model, the Easy Ensemble Classifying model would be the best overall predictor in assesing credit risk as it has a high accuracy rate (91.8%), high precision levels for identifying low risk credits (100%), low levels of low risk creditors being denied (9%) as well as (94%) recall rate for identifying low risk loans that were deemed high risk.
+
+
